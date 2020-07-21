@@ -37,18 +37,18 @@
             <h2>Order Form</h2>
 
             <div>
-                Your name
-                <input type="text" name="name">
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name">
             </div>
 
             <div>
-                Who are we sending this to?
-                <input type="text" name="recipient">
+                <label for="recipient">Who are we sending this to?</label>
+                <input type="text" name="recipient" id="recipient">
             </div>
 
             <div>
-                Choose a melon
-                <select name="melon">
+                <label for="melon">Choose a melon</label>
+                <select name="melon" id="melon">
                     <option value="watermelon">Watermelon</option>
                     <option value="canteloupe">Canteloupe</option>
                     <option value="honeydew">Honeydew</option>
@@ -56,20 +56,27 @@
             </div>
 
             <div>
-                When should we deliver?
-                <input type="radio" name = "time" value = "am"> Morning
-                <input type="radio" name = "time" value = "pm"> Evening
-                <input type="radio" name = "time" value = "any"> Any time
+                <label for="delievery">When should we deliver?</label>
+
+                <input type="radio" name = "time" value = "am" id="am"> 
+                <label for="am">Morning</label>
+
+                <input type="radio" name = "time" value = "pm" id="pm"> 
+                <label for="pm">Evening</label>
+
+                <input type="radio" name = "time" value = "any" id="any">
+                <label for="any">Any time</label> 
             </div>
 
             <div>
-                Enter your message:
-                <textarea name="message"></textarea>
+                <label for="message">Enter your message:</label>
+                <textarea name="message" id="message"></textarea>
             </div>
 
             <div>
-                Subscribe to our newsletter
-                <input type="checkbox" name="subscribe" value = "Yes">Yes
+                <label for="subscribe">Subscribe to our newsletter</label>
+                <input type="checkbox" name="subscribe" value = "Yes" id="subscribe">
+                Yes
             </div>
 
             <input type="submit">
