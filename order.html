@@ -17,39 +17,60 @@
         </p>
 
         <h2>Melon Options</h2>
-
-        Choose from one of these melons:
-        Watermelon $1,200.00
-        Canteloupe $400.00
-        Honeydew $1,750,00.00
+        <p>Choose from one of these melons:</p>
+        <table>
+            <tr>
+                <td>Watermelon</td>
+                <td>$1,200.00</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td>
+                <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td>
+                <td>$1,750,00.00</td>
+            </tr>
+        </table>
 
         <form>
-            Order Form
+            <h2>Order Form</h2>
 
-            <label>Your name</label>
-            <input type="text" name="name">
+            <div>
+                Your name
+                <input type="text" name="name">
+            </div>
 
-            <label>Who are we sending this to?</label>
-            <input type="text" name="recipient">
+            <div>
+                Who are we sending this to?
+                <input type="text" name="recipient">
+            </div>
 
-            Choose a melon
-            <select name="melon">
-                <option value="watermelon">Watermelon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
-            </select>
+            <div>
+                Choose a melon
+                <select name="melon">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="honeydew">Honeydew</option>
+                </select>
+            </div>
 
-            When should we deliver?
-            <input type="radio" name = "time" value = "am"> Morning
-            <input type="radio" name = "time" value = "pm"> Evening
-            <input type="radio" name = "time" value = "any"> Any time
+            <div>
+                When should we deliver?
+                <input type="radio" name = "time" value = "am"> Morning
+                <input type="radio" name = "time" value = "pm"> Evening
+                <input type="radio" name = "time" value = "any"> Any time
+            </div>
 
-            <label>Enter your message:</label>
-            <textarea name="message"></textarea>
+            <div>
+                Enter your message:
+                <textarea name="message"></textarea>
+            </div>
 
-            Subscribe to our newsletter
-            <input type="checkbox" name="subscribe" value = "Yes">
-            <label>Yes</label>
+            <div>
+                Subscribe to our newsletter
+                <input type="checkbox" name="subscribe" value = "Yes">Yes
+            </div>
 
             <input type="submit">
         </form>
